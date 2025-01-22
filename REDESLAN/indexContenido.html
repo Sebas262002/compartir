@@ -92,10 +92,31 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house-door-fill navicon"></i> Home</a></li>
-        <li><a href="#about"><i class="bi bi-info-circle-fill navicon"></i> ¿Qué es una Red LAN?</a></li>
-        <li><a href="#resume"><i class="bi bi-diagram-3-fill navicon"></i> Tipos de Conexión</a></li>
-        <li><a href="#portfolio"><i class="bi bi-puzzle-fill navicon"></i> Componentes de una Red LAN</a></li>
-        <li><a href="#services"><i class="bi bi-lightbulb-fill navicon"></i> Ventajas de una LAN</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Medios de Conexión</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#"><i class="bi bi-info-circle-fill navicon"></i> subtema</a></li>
+            <li><a href="#"><i class="bi bi-diagram-3-fill navicon"></i> subtema</a></li>
+            <li><a href="#"><i class="bi bi-puzzle-fill navicon"></i> subtema</a></li>
+            <li><a href="#"><i class="bi bi-lightbulb-fill navicon"></i> subtema</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Redes LAN</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#about"><i class="bi bi-info-circle-fill navicon"></i> ¿Qué es una Red LAN?</a></li>
+            <li><a href="#resume"><i class="bi bi-diagram-3-fill navicon"></i> Tipos de Dispositivos</a></li>
+            <li><a href="#portfolio"><i class="bi bi-puzzle-fill navicon"></i> Componentes</a></li>
+            <li><a href="#services"><i class="bi bi-lightbulb-fill navicon"></i>Ejemplo en Cisco Packet</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Internet</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#"><i class="bi bi-info-circle-fill navicon"></i> subtema</a></li>
+            <li><a href="#"><i class="bi bi-diagram-3-fill navicon"></i> subtema</a></li>
+            <li><a href="#"><i class="bi bi-puzzle-fill navicon"></i> subtema</a></li>
+            <li><a href="#"><i class="bi bi-lightbulb-fill navicon"></i> subtema</a></li>
+          </ul>
+        </li>
+
       </ul>
     </nav>
 
@@ -226,24 +247,12 @@
               <h4>1. Router: El Director de Tráfico de la Red</h4>
               <p><em>Un router conecta diferentes redes, dirigiendo el tráfico de datos entre ellas. Es esencial para
                   conectarse a Internet y otras redes externas.</em></p>
-              <ul>
-                <li><strong>Funciones:</strong> Conectar redes locales con redes externas (WAN), asignar direcciones IP
-                  y brindar seguridad.</li>
-                <li><strong>Ejemplo:</strong> El router de tu hogar que conecta tu red doméstica al proveedor de
-                  Internet.</li>
-              </ul>
             </div>
 
             <div class="resume-item">
               <h4>2. Switch: El Organizador de la Red Local</h4>
               <p><em>Un switch conecta múltiples dispositivos en una red local (LAN), facilitando el intercambio de
                   datos de manera eficiente.</em></p>
-              <ul>
-                <li><strong>Funciones:</strong> Conectar dispositivos dentro de la misma red, enviar datos de forma
-                  eficiente y optimizar el tráfico local.</li>
-                <li><strong>Ejemplo:</strong> Un switch en una oficina conecta computadoras y servidores para compartir
-                  recursos y datos.</li>
-              </ul>
             </div>
           </div>
 
@@ -430,49 +439,39 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section" style="position: relative;">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Ventajas de las Redes LAN</h2>
-        <p>Las redes LAN ofrecen varias ventajas, que incluyen alta velocidad, confiabilidad, y un control
-          centralizado sobre los dispositivos conectados. A continuación, se presentan algunas de sus principales
-          ventajas:</p>
-      </div><!-- End Section Title -->
+<!-- Services Section -->
+<section id="services" class="services section" style="position: relative;">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Ejemplo en Cisco Packet Tracer</h2>
+    <p>Configurar una red LAN básica que permita la comunicación entre dos computadoras conectadas a un switch y opcionalmente a un router para proporcionar conectividad a internet o a otras redes:</p>
+  </div><!-- End Section Title -->
 
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-lightning-charge"></i></div>
-            <div>
-              <h4 class="title"><a class="stretched-link">Alta Velocidad</a></h4>
-              <p class="description">Las redes LAN, especialmente las cableadas, ofrecen velocidades de transferencia
-                de datos de hasta 100 Gbps, lo que permite un uso eficiente para tareas de gran ancho de banda.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-shield-lock"></i></div>
-            <div>
-              <h4 class="title"><a class="stretched-link">Seguridad</a></h4>
-              <p class="description">Las redes LAN cableadas son más seguras debido a la menor exposición a amenazas
-                externas, y se pueden implementar controles centralizados de seguridad.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-check-circle"></i></div>
-            <div>
-              <h4 class="title"><a class="stretched-link">Fiabilidad</a></h4>
-              <p class="description">Las redes LAN son más confiables y estables en comparación con las redes
-                inalámbricas, especialmente en entornos de oficina o empresas donde la consistencia es crucial.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div>
+          <h4 class="title"><a class="stretched-link">Componentes</a></h4>
+          <img src="./img/componentes.png" alt="Alta Velocidad" class="img-fluid service-img">
         </div>
-      </div>
-    </section><!-- /Services Section -->
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div>
+          <h4 class="title"><a class="stretched-link">Esquema</a></h4>
+          <img src="./img/Grafica.png" alt="Seguridad" class="img-fluid service-img">
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div>
+          <h4 class="title"><a class="stretched-link">Fiabilidad</a></h4>
+          <img src="./img/Comprobacion.png" alt="Fiabilidad" class="img-fluid service-img">
+        </div>
+      </div><!-- End Service Item -->
+    </div>
+  </div>
+</section><!-- /Services Section -->
 
     <style>
       .service-item {
