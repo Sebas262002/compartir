@@ -163,7 +163,17 @@
         <h2>Redes LAN - Juego de Ahorcado</h2>
         <p>¡Adivina las palabras relacionadas con redes LAN! Trata de adivinar la palabra antes de que se te acaben los intentos.</p>
       </div><!-- End Section Title -->
-    
+      <ol>
+        <li>¿Qué tipo de topología de red utiliza un solo canal de comunicación compartido por todos los dispositivos conectados?</li>
+        <li>¿Cómo se llama la topología de red que tiene un nodo central al cual están conectados todos los dispositivos?</li>
+        <li>¿Qué dispositivo de red se utiliza para interconectar múltiples dispositivos en una red y gestionar el tráfico de datos?</li>
+        <li>¿Qué dispositivo dirige el tráfico entre diferentes redes y permite la comunicación entre ellas?</li>
+        <li>¿Qué equipo de red proporciona servicios o recursos a otros dispositivos conectados a la red?</li>
+        <li>¿Cómo se llama una red que conecta dispositivos dentro de una zona geográfica limitada, como una oficina o un hogar?</li>
+        <li>¿Qué topología de red forma un círculo donde cada dispositivo está conectado con otros dos dispositivos?</li>
+      </ol>
+      
+      
       <div class="container" data-aos="fade-up" data-aos-delay="100">
     
         <div class="row gy-4 justify-content-center">
@@ -197,12 +207,12 @@
     </section><!-- /About Section -->
     
     <script>
-      const words = ["bus", "estrella", "direccionamiento ip", "conmutacion", "switch", "router", "servidor", "lan", "anillo", "estrella", "red local", "red de area amplia"];
+      const words = ["bus", "estrella", "switch", "router", "servidor", "lan", "anillo"];
       let selectedWord, triesLeft, guessedLetters, failedLetters;
     
       function startGame() {
         selectedWord = words[Math.floor(Math.random() * words.length)].toUpperCase();
-        triesLeft = 6;
+        triesLeft = 8;
         guessedLetters = [];
         failedLetters = [];
         document.getElementById("word").textContent = getDisplayWord(selectedWord);
@@ -246,6 +256,9 @@
       // Start the first game
       startGame();
     </script>
+
+
+    
     
 <!-- Section Content -->
 <div class="container-fluid" style="position: relative; z-index: 2; text-align: center; color: #fff; padding: 50px; overflow: hidden;">
