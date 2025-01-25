@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
+  <title>Red LAN</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -84,36 +84,44 @@
     </a>
 
 
-
+    <div class="social-links text-center">
+      <!-- Botones Estudiante y Profesor (letra pequeña, botones grandes) -->
+      <div class="text-center" style="margin-top: 20px;">
+        <a href="#" class="btn btn-success elevate-button"
+          style="background-color: #28a745; color: white; padding: 20px 50px; border-radius: 5px; text-decoration: none; margin-right: 20px; font-size: 14px;">
+          <i class="bi bi-person-fill" style="margin-right: 10px; font-size: 20px;"></i> Estudiante
+        </a>
+        <a href="#" class="btn btn-success elevate-button"
+          style="background-color: #28a745; color: white; padding: 20px 50px; border-radius: 5px; text-decoration: none; font-size: 14px;">
+          <i class="bi bi-mortarboard-fill" style="margin-right: 10px; font-size: 20px;"></i> Profesor
+        </a>
+      </div>
+    </div>
+    
+    <!-- Efecto Hover Elevación con CSS -->
+    <style>
+      .elevate-button {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .elevate-button:hover {
+        transform: translateY(-10px); /* Hace que el botón se eleve */
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+      }
+    </style>
+    
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house-door-fill navicon"></i> Home</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Medios de Conexión</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#"><i class="bi bi-info-circle-fill navicon"></i> subtema</a></li>
-            <li><a href="#"><i class="bi bi-diagram-3-fill navicon"></i> subtema</a></li>
-            <li><a href="#"><i class="bi bi-puzzle-fill navicon"></i> subtema</a></li>
-            <li><a href="#"><i class="bi bi-lightbulb-fill navicon"></i> subtema</a></li>
-          </ul>
-        </li>
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Redes LAN</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#about"><i class="bi bi-info-circle-fill navicon"></i> ¿Qué es una Red LAN?</a></li>
-            <li><a href="#resume"><i class="bi bi-diagram-3-fill navicon"></i> Tipos de Dispositivos</a></li>
-            <li><a href="#portfolio"><i class="bi bi-puzzle-fill navicon"></i> Componentes</a></li>
-            <li><a href="#services"><i class="bi bi-lightbulb-fill navicon"></i>Ejemplo en Cisco Packet</a></li>
+            <li><a href="home.html" class="active"><i class="bi bi-house-fill navicon"></i> Home</a></li>
+            <li><a href="indexContenido.html"><i class="bi bi-gear-fill navicon"></i> ¿Qué es una Red LAN?</a></li>
+            <li><a href="Topologia.html"><i class="bi bi-graph-up navicon"></i> Topologías de red LAN</a></li>
+            <li><a href="recursosEducativos.html"><i class="bi bi-book-fill navicon"></i> Recursos Educativos</a></li>
+            <li><a href="Juegos.html"><i class="bi bi-pencil-square navicon"></i> Ejemplos y Ejercicios</a></li>                
           </ul>
         </li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Internet</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#"><i class="bi bi-info-circle-fill navicon"></i> subtema</a></li>
-            <li><a href="#"><i class="bi bi-diagram-3-fill navicon"></i> subtema</a></li>
-            <li><a href="#"><i class="bi bi-puzzle-fill navicon"></i> subtema</a></li>
-            <li><a href="#"><i class="bi bi-lightbulb-fill navicon"></i> subtema</a></li>
-          </ul>
-        </li>
-
       </ul>
     </nav>
 
@@ -121,8 +129,6 @@
   </header>
 
   <main class="main">
-
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -134,8 +140,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="../indexHOME.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="../indexHOME.html" class="nav-item nav-link">Topologias</a>
+          <a href="about.html" class="nav-item nav-link"></a>
           <a href="courses.html" class="nav-item nav-link">Courses</a>
           <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
@@ -153,20 +159,7 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="img/RED1.jpeg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2 style="color: aqua;">REDES LAN</h2>
-        <p>Temas: <span class="typed" data-typed-items="¿Qué es?, Tipos, Ventajas, Topologias etc.</span><span class="
-            typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink"
-            aria-hidden="true"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
-
+    
     <!-- About Section -->
     <section id="about" class="about section">
       <!--<iframe src="home.html" width="100%" height="500px"></iframe> -->
@@ -180,17 +173,16 @@
             a Internet de manera eficiente y rápida.</p>
         </div><!-- End Section Title -->
 
-        <!-- Interactive Carousel -->
-        <div id="aboutCarousel" class="carousel slide mb-5 shadow" data-bs-ride="carousel">
+        <div id="aboutCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/RED1.jpg" class="d-block mx-auto img-fluid rounded" alt="Imagen Red LAN 1">
+              <img src="img/INSTALACIÓN DE REDES.jpg" class="d-block w-75 mx-auto" alt="Imagen Red LAN 1" style="width: 500px; height: 500px;"> 
             </div>
             <div class="carousel-item">
-              <img src="img/RED3.jpg" class="d-block mx-auto img-fluid rounded" alt="Imagen Red LAN 2">
+              <img src="img/fiber-4814456.jpg" class="d-block w-75 mx-auto" alt="Imagen Red LAN 2" style="width: 500px; height: 500px;"> 
             </div>
             <div class="carousel-item">
-              <img src="img/RED 2.jpg" class="d-block mx-auto img-fluid rounded" alt="Imagen Red LAN 3">
+              <img src="img/descarga.jpg" class="d-block w-75 mx-auto" alt="Imagen Red LAN 3" style="width: 500px; height: 500px;"> 
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
@@ -202,6 +194,8 @@
             <span class="visually-hidden">Siguiente</span>
           </button>
         </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNgu6BWaMu4vMMP2gd0Vp1m8kVz2PN=chf8EveSliYL" crossorigin="anonymous"></script>
 
         <!-- Dynamic Content -->
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -220,44 +214,110 @@
         </div>
       </section>
     </section>
+    
 
+<!-- Resume Section -->
+<section id="resume" class="resume section">
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Dispositivos Fundamentales en una Red LAN</h2>
+    <p>Los dispositivos de red desempeñan un papel clave en el funcionamiento eficiente de una red LAN. Aquí se explican cuatro elementos esenciales: router, switch, servidor y punto de acceso (AP).</p>
+  </div><!-- End Section Title -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Dispositivos Fundamentales en una Red LAN</h2>
-        <p>Los dispositivos de red desempeñan un papel clave en el funcionamiento eficiente de una red LAN. Aquí se
-          explican tres elementos esenciales: router, switch y servidor.</p>
-      </div><!-- End Section Title -->
+  <div class="container">
 
-      <div class="container">
+    <div class="row">
 
-        <div class="row">
+      <!-- Columna izquierda -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title" onclick="closeAllDetails()">Tipos de Dispositivos</h3>
 
-          <!-- Columna izquierda -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Tipos de Dispositivos</h3>
-
-            <div class="resume-item pb-0">
-              <h4>1. Router: El Director de Tráfico de la Red</h4>
-              <p><em>Un router conecta diferentes redes, dirigiendo el tráfico de datos entre ellas. Es esencial para
-                  conectarse a Internet y otras redes externas.</em></p>
-            </div>
-
-            <div class="resume-item">
-              <h4>2. Switch: El Organizador de la Red Local</h4>
-              <p><em>Un switch conecta múltiples dispositivos en una red local (LAN), facilitando el intercambio de
-                  datos de manera eficiente.</em></p>
-            </div>
+        <div class="resume-item pb-0" onclick="toggleDetails('router-details')">
+          <h4 style="color: blue;">1. Router: El Director de Tráfico de la Red <span id="router-details-icon" style="color: red;">+</span></h4>
+          <div id="router-details" class="details" style="display: none;">
+            <p><em>Un router conecta diferentes redes, dirigiendo el tráfico de datos entre ellas. Es esencial para conectarse a Internet y otras redes externas.</em></p>
+            <img src="img/router-670079.jpg" alt="Imagen de un Router" class="animated-img" style="width: 200px; height: 200px;">
           </div>
+        </div> <br>
 
+        <div class="resume-item" onclick="toggleDetails('switch-details')">
+          <h4 style="color: blue;">2. Switch: El Organizador de la Red Local <span id="switch-details-icon" style="color: red;">+</span></h4>
+          <div id="switch-details" class="details" style="display: none;">
+            <p><em>Un switch conecta múltiples dispositivos en una red local (LAN), facilitando el intercambio de datos de manera eficiente.</em></p>
+            <img src="img/Switches.jpg" alt="Imagen de un Switch" class="animated-img" style="width: 200px; height: 200px;">
+          </div>
+        </div>
+
+        <div class="resume-item" onclick="toggleDetails('server-details')">
+          <h4 style="color: blue;">3. Servidor: El Corazón de la Red <span id="server-details-icon" style="color: red;">+</span></h4>
+          <div id="server-details" class="details" style="display: none;">
+            <p><em>Un servidor proporciona recursos y servicios a otros dispositivos en la red, como almacenamiento, aplicaciones y bases de datos.</em></p>
+            <img src="img/network-2402637_1920.jpg" alt="Imagen de un Servidor" class="animated-img"style="width: 300px; height: 200px;">
+          </div>
+        </div>
+
+        <div class="resume-item" onclick="toggleDetails('ap-details')">
+          <h4 style="color: blue;">4. Punto de Acceso (AP): La Puerta de Entrada a la Red Inalámbrica <span id="ap-details-icon" style="color: red;">+</span></h4>
+          <div id="ap-details" class="details" style="display: none;">
+            <p><em>Un punto de acceso permite que dispositivos inalámbricos se conecten a una red LAN, expandiendo la cobertura de la red.</em></p>
+            <img src="img/Transmissão de Internet via Rede Elétrica – Como Funciona.jpg" alt="Imagen de un Punto de Acceso" class="animated-img" style="width: 300px; height: 200px;">
+          </div>
         </div>
 
       </div>
 
-    </section><!-- /Network Devices Section -->
+    </div>
+
+  </div>
+
+</section><!-- /Network Devices Section -->
+
+<style>
+  .animated-img {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .details[style="display: block;"] .animated-img {
+    opacity: 1;
+    transform: translateX(0);
+  }
+</style>
+
+<script>
+  function toggleDetails(id) {
+    var details = document.getElementById(id);
+    var icon = document.getElementById(id + '-icon');
+    if (details.style.display === 'none') {
+      details.style.display = 'block';
+      icon.textContent = '-';
+    } else {
+      details.style.display = 'none';
+      icon.textContent = '+';
+    }
+  }
+
+  function closeAllDetails() {
+    document.querySelectorAll('.details').forEach(detail => {
+      detail.style.display = 'none';
+      var icon = detail.previousElementSibling.querySelector('span');
+      icon.textContent = '+';
+    });
+  }
+
+  document.querySelectorAll('.animated-img').forEach(img => {
+    img.addEventListener('mouseenter', () => {
+      img.style.transform = 'scale(1.1)';
+      img.style.transition = 'transform 0.3s ease';
+    });
+    img.addEventListener('mouseleave', () => {
+      img.style.transform = 'scale(1)';
+      img.style.transition = 'transform 0.3s ease';
+    });
+  });
+</script>
 
 
 
@@ -429,8 +489,7 @@
 
           </div><!-- End Portfolio Container -->
 
-        </div> <br><br>
-        <a href="Quizz.html" class="btn btn-outline-primary mt-3">Prueba tus conocimientos</a>
+        </div>
 
       </div>
 
@@ -567,7 +626,13 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
